@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Adrián Zúñiga Castro</title>
+    <link rel="stylesheet" href="styles/estilos.css">
+</head>
+<body>
+
+    <!--Encabezado-->
+    <header>
+        <h1><span class="cuadro">Adrián</span></h1>
+        <nav id="nav" class="">
+            <ul>
+                <li><a href="#inicio">Home</a></li>
+                <li><a href="#sobremi">About ME!</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+
+            </ul>
+        </nav>
+        <button class="toggle-button" onclick="abrirCerrarMenu()" ><i class="fa-solid fa-bars"></i></button>
+    </header>
+
+    <!--seccion de inicio-->
+
+    <section id="inicio">
+        <div class="contenido">
+            <div class="fila">
+                <div class="col">
+                    <div class="ui">
+                        DEV <span class="circulo"></span>
+                    </div>
+                    <div class="info">
+                        <h2>Hello, I'm Adrián <br>Web Developer</h2>
+                    </div>
+                    <div class="vertical txt">Experience</div>
+                </div>
+                <div class="col">
+                    <div class="circulo-principal"></div>
+                    <img src="media/yoinicio.png" alt="">
+                </div>
+                <div class="col derecha">
+                    <h3>I love design and creating interactive and user-friendly websites.</h3>
+                     <p>
+                        Passionate about new technologies and how their use changes our daily lives day by day.
+                    </p>
+                    <div class="botones">
+                            <button class="btn-primary"><a href="#projects">Projects</a></button>
+                            <button class="btn-secundary">Contact Me</button>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+    </section>
+
+
+<!--Seccion sobre mi-->
+
+    <section id="sobremi">
+        <div class="contenido">
+            <div class="fila">
+                <div class="col">
+                    <h2 class="titulo-seccion">About <span class="resaltado">Me</span></h2>
+                    <p> Actually i'm a student in Systems Engineer in the search of improve my skills and increase my knowledge in this field.
+                    </p>
+                    
+                    <div class="skills">
+                        <p> <span class="punto"></span> Desarrollo Web</p>
+                        <div class="barra-skill">
+                            <div class="progreso dw" id="dw">
+                                <span>95%</span>
+                            </div>
+                        </div>
+
+                        <p> <span class="punto"></span> Diseño grafico</p>
+                        <div class="barra-skill">
+                            <div class="progreso dg" id="dg">
+                                <span>90%</span>
+                            </div>
+                        </div>
+
+                        <p> <span class="punto"></span>Bases de Datos </p>
+                        <div class="barra-skill">
+                            <div class="progreso bs" id="bs">
+                                <span>80%</span>
+                            </div>
+                        </div>
+
+                        <p> <span class="punto"></span> Digital market</p>
+                        <div class="barra-skill">
+                            <div class="progreso dm" id="dm">
+                                <span>95%</span>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    </a href="#https://drive.google.com/file/d/1cbipHeCHeC2pa8P2RtiOWfseBuXWu9cq/view?usp=drive_link" DOWNLOAD=""><button class="btn-primary">DOWNLOAD CV</button></a>
+                </div>
+                <div class="col">
+                    <div class="circulo-principal"></div>
+                    <img src="media/yoskills.png" alt="">
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!--seccion Projects-->
+
+    <section id="projects">
+        <div class="contenido">
+            <h2 class="titulo-seccion">Projects <span class="resaltado">Destacados</span></h2>
+            <div class="fila">
+                
+                <div class="col">
+                    <div class="numero-proyecto">
+                        0.1
+                    </div>
+                    <h3 class="titulo-proyecto">PROJECT <SPAN class="resaltado">01</SPAN></h3>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda deserunt aut illo itaque! Qui ab, omnis possimus
+                        necessitatibus molestiae ducimus, .
+                    </p>
+                    <button class="btn-primary">Read more</button>
+
+                </div>
+            
+                <div class="col">
+                    <div class="numero-proyecto">
+                        0.2
+                    </div>
+                    <h3 class="titulo-proyecto">PROJECT <SPAN class="resaltado">02</SPAN></h3>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda deserunt aut illo itaque! Qui ab, omnis possimus
+                        necessitatibus molestiae ducimus, .
+                    </p>
+                    <button class="btn-primary">Read more</button>
+
+                </div>
+
+                <div class="col">
+                    <div class="numero-proyecto">
+                        0.3
+                    </div>
+                    <h3 class="titulo-proyecto">PROJECT <SPAN class="resaltado">03</SPAN></h3>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda deserunt aut illo itaque! Qui ab, omnis possimus
+                        necessitatibus molestiae ducimus, .
+                    </p>
+                    <button class="btn-primary">Read more</button>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!--Seccion CONTACTO-->
+
+    <section id="contact">
+        
+        <div class="contenido">
+            <form action="">
+                <h2 class="titulo-seccion">Contactar <spann class="resaltado">Ya</span></h2>
+                <div class="icons">
+                    <nav>
+                        <a href="https://www.facebook.com/adrian.zunigacastro" target="_blank" class="facebook"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="whatsapp://send?phone=50684557365" target="_blank" class="whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://www.instagram.com/a_zcastro/?hl=es-la" target="_blank" class="instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/search/results/all/?fetchDeterministicClustersOnly=true&heroEntityKey=urn%3Ali%3Afsd_profile%3AACoAADP8fH0ByIUYel3lgxYPY0zhNYZ7VvjpPrE&keywords=adri%C3%A1n%20z%C3%BA%C3%B1iga%20castro&origin=RICH_QUERY_SUGGESTION&position=0&searchId=75545573-c133-46d2-9ec1-911222cc189e&sid=ufO&spellCorrectionEnabled=false" target="_blank" class="linkedin"><i class="fa-brands fa-linkedin"></i></a>
+
+                    </nav>
+                </div>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure amet fugit est quia. Maiores quisquam perferendis
+                    voluptatibus asperiores corrupti tenetur iste quidem quas? Facere, pariatur expedita dignissimos impedit itaque
+                    adipisci?
+                </p>
+                <input type="text" placeholder="Name">
+                <input type="text" placeholder="Email">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Messenger"></textarea>
+                <button class="btn-primary">Send</button>
+            </form>
+        </div>
+
+    </section>
+
+    <!--Section FOOTER-->
+
+    <footer>
+        <div class="contenido">
+            <div class="col">
+                <h3>Adrián Dev</h3>
+                <ul>
+                    <li><a href="">Terminos y condiciones</a></li>
+                    <li><a href="">Politicas de privacidad</a></li>
+                    <li><a href="">@AdriánDeveloper</a></li>
+                    <li><a href=""></a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <script src="javascript/script.js"></script>
+</body>
+</html>

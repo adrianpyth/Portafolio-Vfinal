@@ -1,0 +1,819 @@
+/*ya importamos las fuentes de google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Krub:wght@300;400;500;600;700&family=Oswald:wght@200;300;400;500;600;700&display=swap');
+
+
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+html{
+
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #171717;
+    color: aliceblue;
+    font-family:'Krub';
+
+
+}
+
+/*Encabezado*/
+header{
+
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10px;
+    font-family: 'Oswald';
+}
+
+header h1{
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    
+    
+}
+
+header h1 .cuadro{
+
+    display: block;
+    width: 75px;
+    height: 35px;
+    background-color: #F4822E;
+    margin-right: 10px;
+    padding: auto;
+    text-align: center;
+    padding-top: 3px;
+    text-transform: uppercase;
+    font-family: 'Oswald';
+    font-weight: 500;
+    
+    
+
+}
+
+header h1 .cuadro:hover{
+
+    background-color: #fff;
+    color: #000;
+}
+
+header nav ul{
+
+    display: flex;
+    list-style: none;
+
+}
+
+header nav ul li{
+
+    padding: 10px 0px;
+    border-bottom: 3px solid transparent;
+    margin: 0 30px;
+}
+
+header nav ul li a{
+
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+
+}
+
+header nav ul li a:hover{
+
+    border-bottom: 3px solid #fff;
+    transition: .1.5s;
+}
+
+header button {
+    
+    display: none;
+    border: none;
+    padding: 3px 10px;
+    text-transform: uppercase;
+    cursor: pointer;;
+}
+
+
+
+/*seccion inicio*/
+
+.contenido{
+
+    max-width: 1100px;
+    margin: auto;
+}        
+
+#inicio .contenido .fila{
+
+    display: flex;
+
+}
+
+#inicio .contenido .fila .col{
+
+    width: 33%;
+    position: relative;
+
+}
+
+#inicio .contenido .fila .ui{
+
+    font-family: 'krub';
+    font-size: 132px;
+    display: flex;
+    align-items: baseline;
+}
+
+#inicio .contenido .fila .ui .circulo{
+
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color: #F4822E;
+    border-radius: 12px;
+}
+
+#inicio .contenido .fila .col .info{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+
+}
+
+#inicio .contenido .fila .col .info h2 {
+
+    width: fit-content;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#inicio .contenido .col .txt{
+
+    font-family: 'Krub';
+    font-weight: normal;
+    font-size: 43px;
+}
+
+.vertical{
+
+    top: 50%;
+    position: absolute;
+    transform: scale(-1) translate(-50, 50%);
+    writing-mode: vertical-lr;
+    letter-spacing: 5px;
+}
+
+.circulo-principal{
+
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    background-color: #F4822E;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -2;
+
+
+}
+
+#inicio .contenido .fila .col img{
+    display: block;
+    width: 370px;
+    max-width: auto;
+   
+}
+
+
+
+#inicio .contenido .fila .derecha{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 30px;
+    font-family: 'Krub';
+
+
+}
+
+#inicio .contenido .fila .derecha h3{
+
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+#inicio .contenido .fila .derecha p{
+
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.btn-primary{
+
+    display: inline-block;
+    width: fit-content;
+    background-color: #F4822E;
+    cursor: pointer;
+    color: #fff;
+    padding: 7px 15px;
+    text-transform: uppercase;
+    font-family: 'Oswald';
+    transition: .3s;
+    outline: none;
+}
+
+.btn-primary:hover{
+
+    background-color: #000;
+    outline: none;
+}
+
+.btn-secundary{
+
+    display: inline-block;
+    width: fit-content;
+    background-color: #000;
+    cursor: pointer;
+    color: #fff;
+    padding: 7px 15px;
+    text-transform: uppercase;
+    font-family: 'Oswald';
+    transition: .3s;
+    outline: none;
+}
+
+.btn-secundary:hover{
+
+    background-color: #F4822E;
+    outline: none;
+}
+
+/*seccion about me*/
+
+#sobremi{
+
+    padding: 50px 10px;
+    height: 90vh;
+}
+
+#sobremi .contenido .fila{
+
+    display: flex;
+    align-items: center;
+}
+
+#sobremi .contenido .fila .col{
+
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.titulo-seccion{
+    font-size: 61px;
+    margin-bottom: 20px;
+
+}
+
+.resaltado{
+
+    color: #F4822E;
+    font-weight: normal;
+}
+
+#sobremi .contenido .fila .col >p{
+
+    font-size: 14px;
+    width: 350px;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+#sobremi .contenido .fila .col img{
+    display: block;
+    width: 300px;
+    position: relative;
+    left: 100px;
+    bottom: 25px;
+}
+
+#sobremi .contenido .fila .col .skills{
+
+    margin: 20px 0;
+}
+
+#sobremi .contenido .fila .col .skills p{
+
+    margin-right: 40px;
+}
+
+#sobremi .contenido .fila .col .skills .punto{
+    width: 10px;
+    height: 10px;
+    background-color: #F4822E;
+    display: inline-block;
+    margin-right: 15px;
+}
+
+#sobremi .contenido .fila .col .barra-skill{
+
+    width: 80%;
+    height: 15px;
+    border: 1px solid #555;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-left: 30px;
+    position: relative;
+    margin-bottom: 20px;
+
+
+}
+
+#sobremi .contenido .fila .col .barra-skill span{
+
+    display: inline-block;
+    font-size: 10px;
+    position: relative;
+    text-align: center;
+    bottom: 5px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.progreso{
+
+    background-color: #F4822E;
+    width: 0%;
+}
+
+#projects .contenido h2{
+
+    
+    text-align: center;
+}
+
+
+/* animaciones que se agregan dinamicamente mediante javascript*/
+
+.dw{
+    width: 0%;
+    animation: dw 1.5s forwards;
+}
+
+@keyframes dw {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 95%;
+    }
+}
+
+.dg{
+    width: 0%;
+    animation: dg 1.5s forwards;
+}
+
+@keyframes dg {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 90%;
+    }
+}
+
+.bs{
+    width: 0%;
+    animation: bs 1.5s forwards;
+}
+
+@keyframes bs {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 80%;
+    }
+}
+
+.dm{
+    width: 0%;
+    animation: dm 1.5s forwards;
+}
+
+@keyframes dm {
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 95%;
+    }
+}
+
+#sobremi .contenido .fila .col img{
+
+    display: block;
+    max-width: 400px;
+}
+
+#projects{
+
+    padding: 50px 10px;
+}
+
+#projects .contenido .fila {
+
+    display: flex;
+    justify-content: space-between;
+}
+
+#projects .contenido .fila .col{
+
+    width: 250px;
+    border: 2px solid #fff;
+    position: relative;
+    padding: 60px 20px 20px 20px;
+    text-align: center;
+    margin-bottom: 20px;
+    transition: .5s;
+
+}
+
+#projects .contenido .fila .col:hover{
+
+    box-shadow: 0px 0px 20px #F4822E;
+    transform: scale(1.05);
+}
+
+#projects .contenido .fila .col .numero-proyecto{
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    color: #000;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    transition: .4s;
+}
+
+#projects .contenido .fila .col:hover .numero-proyecto{
+
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#projects .contenido .fila .col .titulo-proyecto{
+
+    letter-spacing: 3px;
+    font-size: 25px;
+
+}
+
+#projects .contenido .fila .col hr{
+
+    width: 50px;
+    background-color: #F4822E;
+    border: none;
+    height: 2px;
+    margin: 20px auto;
+
+}
+
+#projects .contenido .fila .col p{
+    font-size: 14px;
+    margin-bottom: 20px;
+
+}
+
+/*seccion CONTACTO */
+
+
+#contact{
+
+    padding: 50px 10px;
+    position: relative;
+    height: 100vh;
+
+}
+
+#contact .contenido{
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
+
+#contact form{
+
+    max-width: 500px;
+    width: 100%;
+
+}
+
+#contact form p{
+    margin-bottom: 30px;
+
+}
+
+#contact form input,
+#contact form textarea{
+
+    width: 100%;
+    display: block;
+    background-color: transparent;
+    border: 1px solid #F4822E;
+    padding: 10px;
+    margin-bottom: 20px;
+    color: #fff;
+    outline: none;
+}
+
+#contact form button{
+
+    margin: auto;
+}
+
+.icons nav{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+
+}
+.icons nav a{
+
+    font-size: 30px;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    justify-content: center;
+    text-align: center;
+    transition: all ease 300ms;
+
+
+}
+
+.icons nav a:hover{
+
+    transform: scale(1.2);
+    
+    
+}
+
+
+.facebook{
+    color: blue;
+    background-color: #fff;
+
+    
+}
+
+.whatsapp{
+    color: white;
+    background-color: green;
+
+}
+
+.instagram{
+
+    color: purple;
+    background-color: #fff;
+    
+}
+
+.linkedin{
+
+    color: blue;
+    background-color: white;
+
+}
+
+/* footer contenido, falta más*/
+footer .contenido{
+    
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    
+}
+
+footer .contenido .col{
+    width: 30%;
+    
+}
+footer .contenido .col h3{
+    position: relative;
+    top: 30px;
+
+
+}
+
+footer .contenido .col ul{
+
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+footer .contenido .col ul li{
+    display: flex;
+    justify-content: center;
+    padding: 50px 20px;
+    text-decoration-line: none;
+}
+
+footer .contenido .col ul li a{
+
+    color: white;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+/* seccion responsive */
+
+/* Estilo para pantallas más pequeñas */
+header nav .toggle-button {
+    display: block; /* Mostrar el botón por defecto en pantallas pequeñas */
+  }
+  
+  /* Estilo para pantallas más grandes (a partir de 769px de ancho) */
+@media (min-width: 921px) {
+    header nav .toggle-button {
+      display: none; /* Ocultar el botón en pantallas más grandes */
+    }
+}
+
+@media screen and (max-width: 920px) {
+    /* Establece display: none solo para los elementos <nav> con la clase "responsive" */
+    header nav.responsive {
+        display: none;
+    }
+
+    /* Agrega display: block; para el botón en lugar de ocultarlo */
+    header .toggle-button {
+        display: block;
+    }
+
+    /* Resto de tus estilos para pantallas más pequeñas */
+    /* ... */
+}
+
+@media screen and (max-width: 920px) {
+
+    header nav{
+        display: none;
+        position: relative;
+    }
+
+
+    header nav.responsive{
+        display: block;
+        position: absolute;
+        right: 10px;
+        top: 55px;
+        background-color: #1d1d1d;
+        border: 1px solid #555;
+        z-index: 10;
+
+    }
+    header nav.responsive ul{
+        display: block;
+        
+    }
+    #inicio .contenido .fila{
+
+        display: block;
+    }
+    #inicio .contenido .fila .col{
+
+        width: 100%;
+        text-align: center;
+
+    }
+    #inicio .contenido .fila .col .txt{
+
+        display: none;
+    }
+    #inicio .contenido .fila .col .ui{
+        justify-content: center;
+        font-size: 80px;
+    }
+    #inicio .contenido .fila .col .info{
+
+        display: block;
+        height: auto;
+        text-align: center;
+    }
+    #inicio .contenido .fila .col .info h2{
+
+        width: auto;
+        margin: 30px 0;
+        font-size: 30px;
+    }
+    #inicio .contenido .fila .col img{
+        margin: auto;
+        width: 150px;
+
+    }
+    #inicio .contenido .fila .col .derecha{
+
+        padding: 0;
+    }
+    .circulo-principal{
+
+        width: 200px;
+        height: 200px;
+
+    }
+    /*seccion ABOUT ME*/
+    #sobremi{
+        height: auto;
+    }
+    #sobremi .contenido .fila{
+        display: block;
+    }
+    #sobremi .contenido .fila .col{
+        width: 100%;
+    }
+    #sobremi .contenido .fila .col img{
+        
+        display: none;
+    }
+    #sobremi .contenido .fila .circulo-principal{
+
+        display: none;
+    }
+    #sobremi .contenido .fila .col .barra-skill{
+
+        width: 90%;
+    }
+    /*SECCION PROJECTS*/
+    #projects .contenido .fila{
+        display: block;
+    }
+    #projects .contenido .fila .col{
+
+        width: 90%;
+        margin: 5px auto;
+    }
+    /*SECCION CONTACTO*/
+    #contact{
+
+        height: auto;
+    }
+    #contact img{
+        display: none;
+
+    }
+    #contact form{
+        max-width: 100%;
+    }
+
+    footer .contenido{
+        display: block;
+        text-align: center;
+    }
+    footer .contenido h3{
+        width: 100%;
+        border-bottom: none;
+    }
+    footer .contenido .col{
+
+        width: 100%;
+        margin-bottom: 25px;
+    }
+
+
+
+
+}
